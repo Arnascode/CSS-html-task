@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
 
 .top {
+  padding-left: 15px;
   display: flex;
   overflow: hidden;
   position: relative;
@@ -20,6 +21,19 @@
 
 img {
   border-radius: 5px 5px 0 0;
+}
+header .top {
+  color: #b6b6b9;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 25px;
+  font-size: 30px;
+  padding-right: 15px;
 }
 
 .grid-1 {
@@ -41,19 +55,20 @@ img {
 .hero {
   display: grid;
   gap: 10px;
-  grid-template-columns: 5fr 1fr 1fr 1fr;
+  grid-template-columns: 15fr 1fr 1fr 1fr;
   grid-template-areas:
-    "one one one five"
-    "two two two five"
-    "three three three five "
-    "four four four five";
+    "one five"
+    "two  five"
+    "three  five "
+    "four  five";
   padding-left: 15px;
   padding-top: 20px;
+  margin-bottom: 25px;
 }
 .pic {
-  max-width: 1200%;
+  max-width: 1700%;
   height: auto;
-  margin-left: 5px;
+  padding-left: 10px;
 }
 .button {
   cursor: pointer;
@@ -79,4 +94,38 @@ img {
   background: url("../assets/background.svg");
   background-size: cover;
   border-radius: 30px;
+}
+.box {
+  padding-left: 15px;
+  background-image: url(../assets/background.svg);
+  border: none;
+  height: 200px;
+
+  background-size: cover;
+  position: relative;
+  border-radius: none;
+}
+.logos {
+  padding-left: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  justify-content: space-around;
+  padding-top: 40px;
+}
+.text {
+  padding-left: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 40px;
+  justify-content: space-between;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.nfts {
+  display: flex;
+  gap: 45px;
+  padding-left: 15px;
 }
