@@ -1,5 +1,25 @@
 body {
+  background-color: snow;
+  max-width: 428px;
+  height: 3300px;
   h1 {
     text-transform: uppercase;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  .top {
+    color: rgb(182, 182, 185);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    font-size: 30px;
   }
 }

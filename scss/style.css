@@ -1,4 +1,41 @@
+body {
+  background-color: snow;
+  min-width: 428px;
+  height: 3300px;
+}
+
 body h1 {
   text-transform: uppercase;
+}
+
+body header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+header .top {
+  color: #b6b6b9;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 25px;
+  font-size: 30px;
 }
 /*# sourceMappingURL=style.css.map */
