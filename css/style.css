@@ -1,181 +1,240 @@
 @import "reset.css";
 @import "common.css";
+@import "destop.css";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
 
-body {
-  margin-left: auto;
-  margin-right: auto;
-}
-.top {
-  display: flex;
-  overflow: hidden;
-  position: relative;
-  align-content: center;
-}
+@media screen and (max-width: 428px) {
+  body {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .top {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-content: center;
+  }
 
-.top #links {
-  display: none;
-}
+  .top #links {
+    display: none;
+  }
 
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  border-radius: 5px;
-}
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+  }
 
-img {
-  border-radius: 5px 5px 0 0;
-}
-header .top {
-  color: #b6b6b9;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  margin-top: 25px;
-  font-size: 30px;
-  padding-right: 15px;
-}
+  header .top {
+    color: #b6b6b9;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-top: 25px;
+    font-size: 30px;
+    padding-right: 15px;
+  }
 
-.grid-1 {
-  grid-area: one;
-  color: rgb(241, 122, 225);
-  text-transform: uppercase;
-}
-.grid-2 {
-  grid-area: two;
-}
-.grid-3 {
-  grid-area: three;
-}
-.grid-4 {
-  grid-area: four;
-  max-width: 50%;
-}
-.grid-5 {
-  grid-area: five;
-}
-.hero {
-  display: grid;
-  gap: 10px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-areas:
-    "one five"
-    "two  five"
-    "three  five "
-    "four  five";
+  .grid-1 {
+    padding-top: 30px;
+    grid-area: one;
+    color: rgb(241, 122, 225);
+    text-transform: uppercase;
+  }
+  .grid-2 {
+    grid-area: two;
+    font-size: 45px;
+    font-weight: 800;
+  }
+  .grid-3 {
+    grid-area: three;
+    font-weight: 400;
+    padding: 29px;
+    padding-left: 0;
+    line-height: 25px;
+  }
+  .grid-4 {
+    grid-area: four;
+    max-width: 50%;
+  }
+  .grid-5 {
+    grid-area: five;
+  }
+  .hero {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "one five"
+      "two  five"
+      "three  five "
+      "four  five";
 
-  padding-top: 20px;
-  margin-bottom: 25px;
-}
-.box p,
-h3 {
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: 15px;
-}
-.hero-bot {
-  display: grid;
+    padding-top: 20px;
+    margin-bottom: 25px;
+  }
+  .box p {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 15px;
+  }
+  .box h3 {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 15px;
+  }
 
-  grid-template-columns: 2fr 1fr 1fr 1fr;
-  grid-template-areas:
-    "one five"
-    "two  five"
-    "three  five "
-    "four  five";
-  padding-top: 20px;
-  margin-bottom: 25px;
-}
-.pic {
-  width: 250px;
-  height: auto;
-  padding-left: 6px;
-}
-.button {
-  cursor: pointer;
-  border: none;
-  width: 300px;
-  height: 50px;
-  border-radius: 30px;
-  font-weight: 600;
-  font-size: 20px;
-  position: relative;
-  background: white;
-  margin: 3px;
-}
+  .hero-bot {
+    display: grid;
 
-.button::after {
-  position: absolute;
-  content: "";
-  top: -3px;
-  bottom: -3px;
-  left: -3px;
-  right: -3px;
-  z-index: -1;
-  background: url("../assets/background.svg");
-  background-size: cover;
-  border-radius: 30px;
-}
-.button-1 {
-  margin-top: 100px;
-}
-.box {
-  background-image: url(../assets/background.svg);
-  border: none;
-  height: 200px;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "one five"
+      "two five "
+      "three five "
+      "four five ";
+    padding-top: 20px;
+    margin-bottom: 25px;
+  }
 
-  background-size: cover;
-  position: relative;
-  border-radius: none;
-}
-.logos {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
-  justify-content: space-around;
-  padding-top: 40px;
-}
-.text {
-  display: flex;
-  flex-wrap: wrap;
-  padding-top: 40px;
-  justify-content: space-between;
-  font-size: 20px;
-  padding-bottom: 10px;
-}
-.text h3 {
-  font-size: 35px;
-}
+  .begin h3 {
+    padding: 15px;
+    padding-left: 0;
+    font-size: 40px;
+    font-weight: 500;
+  }
+  .begin p {
+    padding-bottom: 25px;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  .begin a {
+    text-decoration: underline;
+  }
+  .pic-2 {
+    position: absolute;
+    left: 290px;
+  }
+  .pic {
+    position: absolute;
+    left: 250px;
+    top: 50px;
+    width: 350px;
+    height: auto;
 
-.nfts {
-  display: flex;
-  gap: 45px;
-}
+    padding: 1px;
+  }
+  .button {
+    cursor: pointer;
+    border: none;
+    width: 300px;
+    height: 50px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 20px;
+    position: relative;
+    background: white;
+    margin: 3px;
+  }
 
-.fonts {
-  display: flex;
-  gap: 15px;
-  color: #b6b6b9;
-  margin-top: 15px;
-  margin-bottom: 20px;
-}
-.uh {
-  margin-top: 15px;
-}
+  .button::after {
+    position: absolute;
+    content: "";
+    top: -3px;
+    bottom: -3px;
+    left: -3px;
+    right: -3px;
+    z-index: -1;
+    background: url("../assets/background.svg");
+    background-size: cover;
+    border-radius: 30px;
+  }
+  .button-1 {
+    margin-top: 100px;
+  }
 
-article {
-  display: flex;
-  flex-wrap: wrap;
-  justify-self: unset;
-  flex-shrink: 1;
-}
-footer {
-  margin-top: 25px;
-  text-align: start;
-  padding-bottom: 25px;
-  color: #b6b6b9;
+  .box h3 {
+    font-size: 35px;
+    font-weight: 400;
+    padding-top: 40px;
+  }
+  .box p {
+    padding-top: 15px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .box {
+    background-image: url(../assets/background.svg);
+    border: none;
+    height: 250px;
+    position: absolute;
+    right: 5px;
+    width: 50vh;
+
+    background-size: cover;
+    position: relative;
+    border-radius: none;
+    padding-top: 80px;
+    padding-right: 54px;
+  }
+  .logos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    justify-content: space-evenly;
+    padding-top: 40px;
+  }
+  .text {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    justify-content: space-between;
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+  .text h3 {
+    font-size: 35px;
+  }
+
+  .nfts {
+    display: flex;
+    gap: 45px;
+  }
+
+  .fonts {
+    display: flex;
+    gap: 15px;
+    color: #b6b6b9;
+    margin-top: 25px;
+    margin-bottom: 20px;
+  }
+  .uh {
+    margin-top: 25px;
+  }
+  aside {
+    padding-top: 50px;
+  }
+
+  article {
+    line-height: 2;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+  }
+
+  article ul {
+    margin: 30px;
+  }
+
+  footer {
+    margin-top: 25px;
+    text-align: start;
+    padding-bottom: 25px;
+    color: #b6b6b9;
+  }
 }
