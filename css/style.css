@@ -2,11 +2,15 @@
 @import "common.css";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
 
+body {
+  margin-left: auto;
+  margin-right: auto;
+}
 .top {
-  padding-left: 15px;
   display: flex;
   overflow: hidden;
   position: relative;
+  align-content: center;
 }
 
 .top #links {
@@ -38,6 +42,8 @@ header .top {
 
 .grid-1 {
   grid-area: one;
+  color: rgb(241, 122, 225);
+  text-transform: uppercase;
 }
 .grid-2 {
   grid-area: two;
@@ -55,26 +61,44 @@ header .top {
 .hero {
   display: grid;
   gap: 10px;
-  grid-template-columns: 15fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-areas:
     "one five"
     "two  five"
     "three  five "
     "four  five";
+
+  padding-top: 20px;
+  margin-bottom: 25px;
+}
+.box p,
+h3 {
   padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 15px;
+}
+.hero-bot {
+  display: grid;
+
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "one five"
+    "two  five"
+    "three  five "
+    "four  five";
   padding-top: 20px;
   margin-bottom: 25px;
 }
 .pic {
-  max-width: 1700%;
+  width: 250px;
   height: auto;
-  padding-left: 10px;
+  padding-left: 6px;
 }
 .button {
   cursor: pointer;
   border: none;
-  width: 188px;
-  height: 37px;
+  width: 300px;
+  height: 50px;
   border-radius: 30px;
   font-weight: 600;
   font-size: 20px;
@@ -95,8 +119,10 @@ header .top {
   background-size: cover;
   border-radius: 30px;
 }
+.button-1 {
+  margin-top: 100px;
+}
 .box {
-  padding-left: 15px;
   background-image: url(../assets/background.svg);
   border: none;
   height: 200px;
@@ -106,7 +132,6 @@ header .top {
   border-radius: none;
 }
 .logos {
-  padding-left: 15px;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -115,7 +140,6 @@ header .top {
   padding-top: 40px;
 }
 .text {
-  padding-left: 15px;
   display: flex;
   flex-wrap: wrap;
   padding-top: 40px;
@@ -123,9 +147,35 @@ header .top {
   font-size: 20px;
   padding-bottom: 10px;
 }
+.text h3 {
+  font-size: 35px;
+}
 
 .nfts {
   display: flex;
   gap: 45px;
-  padding-left: 15px;
+}
+
+.fonts {
+  display: flex;
+  gap: 15px;
+  color: #b6b6b9;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.uh {
+  margin-top: 15px;
+}
+
+article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-self: unset;
+  flex-shrink: 1;
+}
+footer {
+  margin-top: 25px;
+  text-align: start;
+  padding-bottom: 25px;
+  color: #b6b6b9;
 }

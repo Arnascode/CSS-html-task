@@ -1,6 +1,6 @@
 body {
   background-color: snow;
-  min-width: 428px;
+  max-width: 428px;
   height: 3300px;
 }
 
@@ -13,8 +13,8 @@ body header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 header {
@@ -22,8 +22,8 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 header .top {
@@ -33,9 +33,13 @@ header .top {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 25px;
   font-size: 30px;
+}
+
+.box text {
+  padding-left: 15px;
 }
 /*# sourceMappingURL=style.css.map */
