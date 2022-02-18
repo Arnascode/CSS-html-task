@@ -236,3 +236,12 @@
     color: #b6b6b9;
   }
 }
+.footeris {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-right: 100px;
+}
+footer {
+  margin: 30px;
+}
